@@ -1,0 +1,55 @@
+<section class="service-info">
+    <h1 class="service-title"> Nuestros Servicios</h1>
+    <div class="service-info-description">
+        <p>
+            En Productly, nos enorgullece ofrecer una amplia gama de servicios de 
+            desarrollo web que se adaptan a las necesidades únicas de cada cliente.
+            Nuestro equipo de expertos está capacitado para utilizar las últimas 
+            tecnologías y herramientas, garantizando soluciones digitales de alta 
+            calidad que impulsan el éxito de tu negocio.
+        </p>
+    </div>
+</section>
+
+<section class="services-info">
+    <div class="service-item" *ngFor="let servicio of servicios">
+        <div class="service-item-icon-container">
+            <i class="fas service-item-icon" [ngClass]="servicio.icono"></i>
+        </div>
+        <h2 class="service-item-title">{{ servicio.titulo }}</h2>
+        <p class="service-item-description">{{ servicio.descripcion }}</p>
+    </div>
+</section>
+
+<section class="techs-container">
+    <div class="curved-reversed">
+    <h2 class="techs-subtitle">Tecnologías que usamos</h2>
+  </div>
+  <div class="techs-slider-container" #container>
+    <div class="techs-card" *ngFor="let tecnologia of tecnologias">
+      <img class="techs-img" [src]="tecnologia.imagen" alt="Imagen de {{ tecnologia.nombre }}">
+    </div>
+    <div class="techs-card" *ngFor="let tecnologia of tecnologias">
+        <img class="techs-img" [src]="tecnologia.imagen" alt="Imagen de {{ tecnologia.nombre }}">
+      </div>
+  </div>
+  </section>
+
+<section class="service-info-final">
+    <div class="service-info-description">
+        <p>
+            En Productly, estamos comprometidos a brindar servicios de desarrollo web 
+            de primera clase que impulsen el crecimiento y el éxito de tu negocio en 
+            línea. 
+        </p>
+    </div>
+    <div class="service-info-description-final">
+        <p>
+            ¡Contáctanos hoy mismo para comenzar tu proyecto digital!
+        </p>
+    </div>
+    <div class="button-section">
+        <button class="button-center" routerLink="/contacto">CONTACTANOS</button>
+      </div>
+</section>   
+

@@ -1,0 +1,337 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.service-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 80%;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.service-title {
+    font-size: 3rem;
+    font-family: 'Gotham Black';
+    font-weight: 800;
+    text-align: center; 
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.service-info-description {
+    flex-basis: 100%; 
+    margin-top: 0.5rem; 
+}
+
+.service-info-description p {
+    font-family: 'Gotham Book';
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    margin-bottom: 16px; 
+}
+
+.services-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+  gap: 16px;
+  margin: 0 auto;
+  max-width: 80%;
+  padding-top: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+  border-radius: 8px;
+}
+
+.service-item-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ff9900;
+  border-radius: 8px;
+  margin: 0 auto 16px;
+}
+
+.service-item-icon {
+  font-size: 3rem;
+  color: #ff9900;
+}
+
+.service-item-title {
+  font-size: 1.2rem;
+  font-family: 'Gotham Black';
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.service-item-description {
+  font-size: 0.8rem;
+  font-family: 'Gotham Book';
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 32px;
+}
+
+.service-info-final {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 80%;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 64px;
+}
+
+.service-info-description-final {
+  flex-basis: 100%; 
+  margin-top: 0.5rem; 
+}
+
+.service-info-description-final p {
+  font-family: 'Gotham Black';
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  margin-bottom: 16px; 
+}
+
+.button-section {
+    text-align: center;
+  }
+  
+  .button-center {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: 'Gotham Book';
+    font-weight: 400;
+  
+  }
+
+
+  .techs-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  
+  .techs-slider-container {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+    margin: 0 auto;
+    max-width: 100%; 
+    align-items: center;
+    scroll-behavior: smooth;
+  }
+  
+  .techs-subtitle {
+    font-size: 2.3rem;
+    padding-top: 4.2rem;
+    padding-bottom: 1rem;
+    font-family: 'Gotham Black';
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .curved-reversed {
+    position: relative;
+    height: 20vh;
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  .techs-card {
+    flex: 0 0 auto;
+    width: 33.3333%; 
+    padding: 20px;
+    box-sizing: border-box; 
+    text-align: center; 
+  }
+  
+  .techs-img {
+    width: 70%; 
+    max-width: 200px;
+    height: auto; 
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 2176px) {
+    .services-info {
+      margin-left: 20%;
+      margin-right: 20%;
+     }
+  }
+
+  @media screen and (min-width: 1441px) and (max-width: 2175px){
+    .service-title {
+      font-size: 3.5rem;
+    }
+
+    .services-info {
+     margin-left: 15%;
+     margin-right: 15%;
+    }
+  
+    .service-info-description p,
+    .service-info-description-final p {
+      font-size: 1.1rem;
+    }
+
+    .service-item-description {
+      font-size: 0.9rem;
+    }
+  
+    .service-info-description-final p {
+      font-size: 1.4rem;
+    }
+  
+    .button-center {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    .service-info, 
+    .service-info-final
+    {
+        max-width: 80%;
+    }
+
+    .services-info {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+
+    .service-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-title {
+        font-size: 2.5rem;
+    }
+
+    .service-info-description-final p {
+        text-align: center;
+      }
+
+} 
+
+  @media screen and (max-width: 900px) { 
+    .service-info, 
+    .service-info-final
+    {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .services-info {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+
+
+    .service-info-final {
+        padding-top: 0;
+        padding-bottom: 3%;
+      }
+  
+      .service-title {
+          font-size: 2.2rem;
+      }
+
+      .service-info {
+        grid-template-columns: 1fr;
+      }
+
+      .service-item {
+        max-width: 80%; 
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .service-item-title {
+        font-size: 1.4rem;
+      }
+
+      .service-item-description {
+        font-size: 0.8rem;
+      }
+
+      .service-info-description p
+      {
+         font-size: 0.8rem;
+     }
+ 
+     .service-info-description-final p {
+       font-size: 1rem;
+       text-align: center;
+     }
+
+     .service-item-icon {
+        max-width: 80%;
+    }
+
+    .techs-card {
+      width: calc(100% / 2); 
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .service-title {
+        font-size: 2rem;
+    }
+
+    .service-item-description {
+        font-size: 0.7rem;
+      }
+
+      .service-info-description p
+      {
+         font-size: 0.7rem;
+     }
+
+     .service-info-description-final p {
+        font-size: 0.7rem;
+        text-align: center;
+      }
+
+      .techs-subtitle {
+        padding-top: 2rem; 
+        padding-bottom: 0.5rem; 
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      .techs-card {
+        width: 100%; 
+      }
+
+      
+      .techs-img {
+        width: 60%; 
+      }
+ 
+   }
