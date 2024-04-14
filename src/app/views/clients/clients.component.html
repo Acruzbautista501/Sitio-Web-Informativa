@@ -1,0 +1,43 @@
+<section class="client-info">
+    <h1 class="client-title"> Nuestros Clientes</h1>
+    <div class="client-info-description">
+        <p>
+            En Productly, nos enorgullece haber tenido el privilegio de trabajar
+            con una amplia variedad de clientes de diferentes sectores y tamaños.
+            Nos esforzamos por establecer relaciones sólidas y duraderas con cada 
+            uno de ellos, brindando soluciones digitales de alta calidad que 
+            impulsan su éxito en línea.
+        </p>
+    </div>
+</section>
+
+<section class="clients-container">
+  <div class="clients-slider-container" #container>
+    <div class="client-card" *ngFor="let empresa of empresas">
+      <img class="client-img" [src]="empresa.imagen" alt="Foto de {{ empresa.nombre }}">
+      <div class="client-text">
+        <h3>{{ empresa.nombre }}</h3>
+        <p>{{ empresa.descripcion }}</p>
+      </div>
+    </div>
+    <div class="client-card" *ngFor="let empresa of empresas">
+        <img class="client-img" [src]="empresa.imagen" alt="Foto de {{ empresa.nombre }}">
+        <div class="client-text">
+          <h3>{{ empresa.nombre }}</h3>
+          <p>{{ empresa.descripcion }}</p>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="client-info-final">
+    <div class="client-info-description">
+        <p>
+            Estos son solo algunos ejemplos de los clientes que hemos tenido el placer 
+            de servir en Productly. Valoramos profundamente estas relaciones y estamos 
+            comprometidos a seguir brindando soluciones digitales de calidad que impulsen 
+            el éxito de sus negocios.
+        </p>
+    </div>
+</section> 
+

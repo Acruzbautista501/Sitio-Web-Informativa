@@ -1,0 +1,168 @@
+.client-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 80%;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.client-title {
+    font-size: 3rem;
+    font-family: 'Gotham Black';
+    font-weight: 800;
+    text-align: center; 
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.client-info-description {
+    flex-basis: 100%; 
+    margin-top: 0.5rem; 
+}
+
+.client-info-description p {
+    font-family: 'Gotham Book';
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    margin-bottom: 16px; 
+}
+
+.clients-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  
+  .clients-slider-container {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+    margin: 0 auto;
+    max-width: 100%; 
+    align-items: center;
+    scroll-behavior: smooth;
+  }
+  
+  .client-card {
+    flex: 0 0 auto;
+    width: 33.3333%; 
+    padding: 20px;
+    box-sizing: border-box; 
+    text-align: center; 
+  }
+
+  .client-card h3 {
+    font-size: 1.6rem;
+    font-family: 'Gotham Black';
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .client-card p {
+    font-family: 'Gotham Book';
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  
+  .client-img {
+    width: 100%; 
+    max-width: 200px;
+    height: auto; 
+    margin-bottom: 10px;
+  }
+
+  .client-info-final {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 80%;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 64px;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    .client-info, 
+    .client-info-final
+    {
+        max-width: 80%;
+    }
+
+    .client-title {
+        font-size: 2.5rem;
+    }
+
+} 
+
+  @media screen and (max-width: 900px) { 
+    .client-info, 
+    .client-info-final
+    {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .client-info-final {
+        padding-top: 0;
+        padding-bottom: 3%;
+      }
+  
+      .client-title {
+          font-size: 2.2rem;
+      }
+
+      .client-info-description p
+      {
+         font-size: 0.8rem;
+     }
+
+    .client-card {
+      width: calc(100% / 2); 
+    }
+    .client-card h3 {
+        font-size: 1.4rem;
+      }
+      
+      .client-card p {
+        font-size: 0.8rem;
+      }
+  }
+
+  @media screen and (max-width: 500px) {
+    .client-title {
+        font-size: 2rem;
+    }
+      .client-info-description p
+      {
+         font-size: 0.7rem;
+     }
+
+      .client-card {
+        width: 100%; 
+      }
+
+      .client-card h3 {
+        font-size: 1rem;
+      }
+      
+      .client-card p {
+        font-size: 0.7rem;
+      }
+
+      .client-img {
+        width: 50%;
+      }
+ 
+   }
