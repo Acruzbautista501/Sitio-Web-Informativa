@@ -1,0 +1,59 @@
+<section class="contact-info" formnovalidate>
+    <div class="form-figure">
+      <img src="../../../assets/img/Image2.png" alt="Form figure">
+    </div>
+    <div class="contact-form-container">
+      <div class="form-container">
+        <h2 class="form-container-title">Contacto</h2>
+        <h3 class="form-container-subtitle">¿Listo para llevar tu proyecto al siguiente nivel? ¡Nos encantaría saber de ti!</h3>
+        <p class="form-container-description">
+         Ponte en contacto con nosotros para discutir tus ideas, objetivos y cómo podemos ayudarte a alcanzar el éxito en línea. Ya sea que tengas preguntas sobre nuestros servicios, quieras solicitar un presupuesto o simplemente quieras saludar,
+         estamos aquí para ayudarte.
+        </p>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+         <mat-form-field appearance="fill" class="input-field">
+           <mat-label>Nombre:</mat-label>
+           <input class="input-area" matInput formControlName="name" required>
+           <mat-error class="error" *ngIf="contactForm.get('name')?.invalid">Por favor, introduce un nombre válido</mat-error>
+         </mat-form-field>
+         <mat-form-field appearance="fill" class="input-field">
+           <mat-label>Email:</mat-label>
+           <input class="input-area" matInput formControlName="email" [ngClass]="{ 'is-invalid': contactForm.get('email')?.invalid && contactForm.get('email')?.touched }" required [type]="'email'">
+           <mat-error class="error" *ngIf="contactForm.get('email')?.invalid">Por favor, introduce un email válido</mat-error>
+         </mat-form-field>
+         <mat-form-field appearance="fill" class="input-field">
+           <mat-label>Compañía:</mat-label>
+           <input class="input-area" matInput formControlName="company">
+         </mat-form-field>
+         <mat-form-field appearance="fill" class="textarea-field">
+           <mat-label>Mensaje:</mat-label>
+           <textarea class="input-area" matInput formControlName="message" required></textarea>
+           <mat-error class="error" *ngIf="contactForm.get('message')?.invalid">Por favor, introduce un mensaje</mat-error>
+         </mat-form-field>
+         <button mat-raised-button style=" background-color: #ff9900; color: white; font-family: 'Gotham Book';" (click)="onSubmit()">Enviar</button>
+       </form>
+      </div>
+      </div>
+      <div class="contact-info-container">
+        <h3 class="form-container-subtitle">Información de Contacto:</h3>
+        <p class="contact-info-option">
+          Dirección: 
+          <span class="contact-info-description">
+          Avenida Principal #123, Colonia Centro, Chinampa, 
+          Veracruz, México, CP: 12345
+        </span> 
+        </p>
+        <p class="contact-info-option">
+          Teléfono: <span class="contact-info-description">+52 22 2222 2222</span>
+        </p>
+        <p class="contact-info-option">
+          Correo Electrónico: 
+          <span class="contact-info-description">
+            contacto@productly.com.mx
+          </span>
+        </p>
+        <p class="contact-info-option">
+          Horario de Atención: <span class="contact-info-description">Lunes a Viernes, 9:00 am - 6:00 pm</span>
+        </p>
+      </div>
+  </section>

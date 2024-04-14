@@ -1,0 +1,147 @@
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 85%;
+}
+
+.form-figure {
+  width: 100%;
+  margin-right: 32px;
+}
+  .form-figure img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .form-container {
+    width: 95%;
+  }
+
+  .form-container-title{
+    font-size: 2rem;
+    font-family: 'Gotham Black';
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+  }
+
+  .form-container-subtitle{
+    font-size: 1rem;
+    font-family: 'Gotham Black';
+    font-weight: 800;
+    width: 100%;
+  }
+
+  .form-container-description {
+    font-family: 'Gotham Book';
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+
+  .form-container form{
+    padding-top: 3%;
+  }
+
+
+  .input-field {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    font-family: 'Gotham Book';
+    font-size: .8rem;
+  }
+
+  .input-area {
+    margin-top: .8rem;
+  }
+
+  .error {
+    color: red;
+    font-family: 'Gotham Book';
+    font-size: .8rem;
+  }
+  
+  .textarea-field {
+    width: 100%;
+    padding-bottom: 2.5rem;
+    font-family: 'Gotham Book';
+    font-size: .8rem;
+  }
+  
+  .mat-form-field-label {
+    color: #3f51b5;
+  }
+  
+  .mat-form-field-underline {
+    background-color: #3f51b5;
+  }
+  
+  .mat-button {
+    margin-top: 16px;
+  }
+
+  
+  .contact-info-container {
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 20px;
+    
+  }
+
+  .contact-info-subtitle{
+    font-size: 1rem;
+    font-family: 'Gotham Black';
+    font-weight: 800;
+    width: 100%;
+  }
+
+  .contact-info-option {
+    font-family: 'Gotham Black';
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .contact-info-description {
+    font-family: 'Gotham Book';
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .form-figure img {
+      width: 70%;
+      height: auto;
+    }
+    
+    .contact-form-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .contact-info-container {
+      margin-left: 0; 
+      margin-top: 20px; 
+    }
+  }
