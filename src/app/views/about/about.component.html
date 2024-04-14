@@ -1,0 +1,56 @@
+<section class="about-info">
+    <h1 class="about-title"> Nosotros </h1>
+    <h2 class="about-subtitle">¡Bienvenido a Productly!</h2>
+    <div class="about-info-description">
+        <p>
+            Somos un equipo apasionado de profesionales del desarrollo web y el diseño creativo, 
+            comprometidos con la excelencia y la innovación en cada proyecto que emprendemos. 
+            Fundada en 2017, nuestra empresa ha crecido gracias al talento y la dedicación 
+            de cada uno de nuestros miembros.
+        </p>
+        <img src="../../../assets/img/about1.png" alt="">
+    </div>
+    <div class="about-info-description">
+        <p>
+            En Productly, creemos en el poder de la colaboración y en la diversidad 
+            de talentos. Con un equipo multidisciplinario que abarca desde desarrolladores
+            web hasta diseñadores gráficos y especialistas en marketing digital, combinamos 
+            nuestras habilidades únicas para ofrecer soluciones completas y efectivas para 
+            nuestros clientes.
+        </p>
+        <img src="../../../assets/img/about2.png" alt="">
+    </div>
+</section>
+
+<section class="team">
+    <div class="team-info-container">
+        <h2>Nuestro Equipo</h2>
+        <p>Permítenos presentarte a algunos de los miembros clave de nuestro equipo:</p>
+    </div>
+    <div class="team-members">
+        <figure class="team-member" *ngFor="let miembro of equipo">
+            <img class="team-member-image" [src]="miembro.foto" alt="Foto de {{ miembro.nombre }}">
+            <figcaption class="team-member-info">
+                <h3 class="team-member-name">{{ miembro.nombre }}</h3>
+                <p class="team-member-position">{{ miembro.puesto }}</p>
+                <p class="team-member-description">{{ miembro.descripcion }}</p>
+            </figcaption>
+        </figure>
+    </div>
+  </section>
+
+  <section class="about-info-final">
+    <div class="about-info-description">
+        <p>
+            Estos son solo algunos de los talentosos individuos que conforman nuestro 
+            equipo en Productly. Juntos, estamos comprometidos a superar 
+            las expectativas de nuestros clientes y a hacer realidad sus sueños 
+            digitales.
+        </p>
+    </div>
+    <div class="about-info-description-final">
+        <p>
+            ¡Gracias por visitarnos y esperamos tener la oportunidad de trabajar contigo pronto!
+        </p>
+    </div>
+  </section>

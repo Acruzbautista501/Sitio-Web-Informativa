@@ -1,0 +1,327 @@
+.about-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 80%;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-family: 'Gotham Black';
+    font-weight: 800;
+    text-align: center; 
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.about-subtitle {
+    font-size: 1.6rem;
+    font-family: 'Gotham Black';
+    font-weight: 500;
+    width: 100%;
+    text-align: left; 
+    margin-top: 16px; 
+}
+
+.about-info-description {
+    flex-basis: 100%; 
+    margin-top: 0.5rem; 
+}
+
+.about-info-description p {
+    font-family: 'Gotham Book';
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    margin-bottom: 16px; 
+}
+
+
+.about-info-description img {
+    max-width: 60%; 
+    display: block; 
+    margin: 0 auto;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .team-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  .team-info-container h2 {
+    font-size: 1.6rem;
+    font-family: 'Gotham Black';
+    font-weight: 500;
+    width: 100%;
+    text-align: center; 
+    margin-top: 16px;
+  }
+
+  .team-info-container p {
+    font-family: 'Gotham Book';
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    margin-bottom: 16px; 
+}
+
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    width: 100%;
+    padding: 0 32px;
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .team-member-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 32px;
+  }
+
+  .team-member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+  .team-member-name {
+    font-size: 1.1rem;
+    font-family: 'Gotham Black';
+    font-weight: 500;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+
+  .team-member-position {
+    font-family: 'Gotham Book';
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 1px;
+  }
+
+  .team-member-description {
+    font-family: 'Gotham Book';
+    font-weight: 400;
+    font-size: 0.7rem;
+    text-align: justify;
+    color: #333;
+  }
+
+  .about-info-final {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 80%;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 64px;
+}
+
+.about-info-description-final {
+  flex-basis: 100%; 
+  margin-top: 0.5rem; 
+}
+
+.about-info-description-final p {
+  font-family: 'Gotham Black';
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  margin-bottom: 16px; 
+}
+
+@media screen and (min-width: 2560px) {
+  .about-info,
+  .team,
+  .about-info-final {
+    max-width: 2000px;
+  }
+
+  .team-members {
+    grid-gap: 64px;
+  }
+
+  .team-member {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .about-info,
+  .team,
+  .about-info-final {
+    max-width: 1440px; 
+  }
+
+  .team-members {
+    grid-gap: 48px; 
+  }
+
+  .team-member {
+    max-width: 380px; 
+  }
+}
+
+  @media screen and (min-width: 1025px) and (max-width: 1400px) {
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    .about-info, 
+    .about-info-final
+    {
+        max-width: 80%;
+    }
+
+    .about-info-description-final p {
+      text-align: center;
+    }
+
+    .about-title {
+        font-size: 2.5rem; 
+    }
+
+    .about-subtitle {
+        font-size: 1.7rem;
+    }
+
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+  @media screen and (max-width: 900px) {
+    .about-info,
+    .about-info-final
+     {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .about-info-final {
+      padding-top: 0;
+      padding-bottom: 3%;
+    }
+
+    .about-title {
+        font-size: 2.2rem;
+    }
+
+    .about-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .about-info-description p
+     {
+        font-size: 0.8rem;
+    }
+
+    .about-info-description-final p {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .about-info-description img {
+        max-width: 80%;
+    }
+
+    .team {
+        display: flex;
+        overflow-x: hidden;
+        margin: 0 auto;
+        max-width: 80%;
+        align-items: center;
+    }
+
+    .team-info-container p {
+        font-size: 0.8rem;
+    }
+
+    .team-members {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+
+    .team-member {
+        max-width: 80%; 
+    }
+
+} 
+
+@media screen and (max-width: 500px) {
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about-info-description p
+     {
+        font-size: 0.7rem;
+    }
+
+    .about-info-description-final p {
+      font-size: 0.9rem;
+    }
+
+    .team-info-container p {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+
+    .team-member {
+      flex-direction: column;
+      align-items: center; 
+      text-align: center; 
+    }
+  
+    .team-member-image {
+      margin-right: 0; 
+      margin-bottom: 16px;
+    }
+
+  }
