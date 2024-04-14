@@ -1,0 +1,49 @@
+<section class="gallery-info">
+    <h1 class="gallery-title">Galería</h1>
+    <div class="gallery-info-description">
+        <p>
+            Descubre nuestra colección de proyectos web destacados que hemos creado 
+            para una variedad de clientes en diversas industrias. Cada proyecto
+            representa nuestro compromiso con la excelencia en el diseño y desarrollo 
+            web, así como nuestra capacidad para cumplir con las necesidades y objetivos 
+            únicos de cada cliente.
+        </p>
+    </div>
+</section>
+
+<section class="gallery-container">
+<div class="logo-container" *ngFor="let proyecto of proyectos; index as i">
+  <img [src]="proyecto.imagen" alt="Logo" (click)="openModal(i)">
+  <div *ngIf="proyecto.isOpen" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>{{ proyecto.nombre }}</h2>
+        <button (click)="closeModal(i)">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <button (click)="prevImage(i)" class="prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <img [src]="proyecto.imagenes[proyecto.selectedImageIndex]" alt="Logo Image">
+        <button (click)="nextImage(i)" class="next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="gallery-info-final">
+<div class="gallery-info-description-final">
+    <p>
+        Descubre nuestra colección de proyectos web destacados que hemos creado 
+        para una variedad de clientes en diversas industrias. Cada proyecto
+        representa nuestro compromiso con la excelencia en el diseño y desarrollo 
+        web, así como nuestra capacidad para cumplir con las necesidades y objetivos 
+        únicos de cada cliente.
+    </p>
+</div>
+</section>
