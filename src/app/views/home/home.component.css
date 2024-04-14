@@ -1,0 +1,606 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.info-home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 64px 32px;
+}
+
+.info-home-text {
+  flex-basis: calc(50% - 32px); 
+  margin-right: 32px;
+}
+
+.info-home-title {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+  font-family: 'Gotham Black';
+  font-weight: 800;
+  text-align: left;
+}
+
+.info-home-description {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  font-family: 'Gotham Book';
+  font-weight: 400;
+  text-align: justify;
+}
+
+.info-home-figure {
+  flex-basis: 45%;
+  margin-left: auto;
+}
+
+.info-home-image {
+  width: 100%;
+  height: auto;
+}
+
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 80%;
+}
+
+.subtitle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.info-home-subtitle {
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+  font-family: 'Gotham Black';
+  font-weight: 800;
+  text-align: center;
+}
+
+
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.curved {
+  position: relative;
+  height: 20vh;
+  width: 100%; 
+  background-image: linear-gradient(to top, #ffe5d2, #ffffff);
+  border-bottom-left-radius: 50% 80%;
+  border-bottom-right-radius: 50% 80%;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.button-section {
+  text-align: center;
+}
+
+.button-center {
+  display: inline-block;
+  background-color: #ff6347;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: 'Gotham Book';
+  font-weight: 400;
+
+}
+
+.column h2 {
+  font-size: 1.6rem;
+  font-family: 'Gotham Black';
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.column p {
+  font-family: 'Gotham Book';
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.custom-icon {
+  font-size: 200%; 
+  display: block; 
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+.column button {
+  background-color: #ff6347;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.figure-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.figure {
+  margin: 0 auto 2rem;
+  max-width: 100%;
+}
+
+.figure-img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+}
+
+.figure-caption {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.text-content {
+  max-width: 50rem;
+  text-align: justify;
+}
+
+.text-content p {
+  font-family: 'Gotham Book';
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.testimonios-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.testimonios-slider-container {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden; 
+  margin: 0 auto;
+  max-width: 100%; 
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.info-subtitle {
+  font-size: 2.3rem;
+  padding-top: 4.2rem;
+  padding-bottom: 1rem;
+  font-family: 'Gotham Black';
+  font-weight: 800;
+  text-align: center;
+}
+
+.curved-reversed {
+  position: relative;
+  height: 20vh;
+  width: 100%; 
+  background-image: linear-gradient(to top, #ffffff, #ffe5d2);
+  border-top-left-radius: 50% 80%;
+  border-top-right-radius: 50% 80%;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.testimonio-card {
+  flex: 0 0 auto;
+  width: 33.3333%; 
+  padding: 20px;
+  box-sizing: border-box; 
+  text-align: center; 
+}
+
+.testimonio-card h3 {
+  font-size: 1.6rem;
+  font-family: 'Gotham Black';
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.testimonio-card p {
+  font-family: 'Gotham Book';
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.foto {
+  width: 50%; 
+  max-width: 200px;
+  height: auto; 
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.container-marketing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 80%;
+  padding-bottom: 8rem;
+  padding-top: 5rem;
+}
+
+.title-marketing {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Gotham Black';
+  font-weight: 800;
+  width: 100%; 
+}
+
+.info-marketing {
+  margin: 0;
+  font-family: 'Gotham Book';
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  width: 100%; 
+  padding-top: 2rem;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 33.3333%; 
+  padding: 20px;
+  box-sizing: border-box; 
+  text-align: center; 
+}
+
+.item figure {
+  margin: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.item figure img {
+  width: 100%;
+}
+
+.item figcaption {
+  font-size: 1.2rem;
+  font-family: 'Gotham Black';
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.item p {
+  font-size: 1rem;
+  font-family: 'Gotham Book';
+  font-weight: 400;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+@media screen and (min-width: 1441px) {
+
+  .info-home-text,
+  .info-home-figure,
+  .item {
+    flex-basis: 45%; 
+  }
+
+  .item {
+    flex-basis: 30%; 
+  }
+
+  .text-content {
+    width: 80%;
+  }
+
+  .testimonio-card{
+    flex-basis: 25%;
+  }
+
+  .info-home {
+    padding: 100px 32px; /* Adjust padding as needed */
+  }
+
+  .info-home-title {
+    font-size: 3rem; /* Increase font size as needed */
+  }
+
+  .info-home-description {
+    font-size: 1.2rem; /* Increase font size as needed */
+  }
+
+  .info-home-subtitle,
+  .info-subtitle,
+  .title-marketing {
+    font-size: 2.8rem; /* Increase font size as needed */
+  }
+
+  .column h2,
+  .testimonio-card h3,
+  .item figcaption {
+    font-size: 1.8rem; /* Increase font size as needed */
+  }
+
+  .column p,
+  .testimonio-card p,
+  .item p,
+  .text-content p {
+    font-size: 1.1rem; /* Increase font size as needed */
+  }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1311px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .info-home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 64px 32px;
+  }
+
+  .info-home-title {
+    font-size: 2.5rem; 
+    text-align: left;
+  }
+
+  .info-home-description {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .column {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .info-home-figure,
+  .info-home-text {
+    flex-basis: 100%;
+  }
+
+  .info-home-figure {
+    margin-right: 0;
+  }
+
+  .info-home-title {
+    font-size: 2.2rem
+  }
+  .info-home-description {
+    font-size: 1rem;
+  }
+  .info-subtitle {
+    font-size: 1.8rem;
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .info-home-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .column h2 {
+    font-size: 1.4rem;
+  }
+
+  .column p {
+    font-size: 0.8rem;
+  }
+
+  .button-center {
+    padding: 0.5rem;
+  }
+  .testimonio-card {
+    width: calc(100% / 2); 
+  }
+  .testimonio-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonio-card p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .figure {
+    margin-bottom: 2rem;
+  }
+
+  .testimonios-slider-container {
+    overflow-x: auto; 
+  }
+
+    .item {
+    width: 50%;
+  }
+
+  .title-marketing {
+    font-size: 1.5rem;
+      text-align: center;
+
+  }
+
+  .info-marketing {
+    font-size: 0.8rem;
+  }
+
+  .item figcaption {
+    font-size: 1rem;
+  }
+
+  .item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+  .info-home {
+    padding: 32px;
+  }
+
+  .info-home-title {
+    font-size: 2rem; 
+  }
+
+  .info-home-description {
+    font-size: 0.8rem; 
+  }
+  .info-home-subtitle {
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .column h2 {
+    font-size: 1rem;
+  }
+
+  .column p {
+    font-size: 0.7rem;
+  }
+
+  .curved {
+    display: none;
+  }
+
+  .figure-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .text-content p {
+    font-size: 0.7rem;
+  }
+
+  .info-subtitle {
+    padding-top: 2rem; 
+    padding-bottom: 0.5rem; 
+  }
+
+  .curved-reversed {
+    height: auto; 
+    border-radius: 0; 
+    background-image: none;
+  }
+
+
+  .testimonio-card {
+    width: 100%; 
+  }
+
+  .testimonio-card h3 {
+    font-size: 1rem;
+  }
+
+  .testimonio-card p {
+    font-size: 0.7rem;
+  }
+
+
+  .foto {
+    width: 40%; 
+  }
+
+  .info-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .title-marketing {
+    font-size: 1.2rem;
+  }
+
+  .info-marketing {
+    font-size: 0.7rem;
+  }
+
+  .title-marketing,
+  .info-marketing {
+    text-align: center;
+  }
+
+  .item figcaption {
+    font-size: 0.9rem;
+  }
+
+  .item p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,71 @@
+<section class="info-home">
+    <div class="info-home-text">
+      <h2 class="info-home-title">Los superpoderes del desarrollo web</h2>
+      <p class="info-home-description">
+        Nuestro equipo experto combina la creatividad y la tecnología para 
+        crear sitios web únicos y cautivadores que se adapten
+        perfectamente a tus necesidades. 
+      </p>
+    </div>
+    <figure class="info-home-figure">
+      <img src="../../../assets/img/Image1.png" alt="Imagen de información" class="info-home-image">
+    </figure>
+</section>
+
+<section class="center-container">
+  <div class="container">
+    <div class="subtitle-container">
+      <h2 class="info-home-subtitle">Desarollamos soluciones para aumentar tus superpoderes</h2>
+    </div>
+    <div class="column" *ngFor="let columna of columnas">
+      <h2><i class="{{ columna.icono }}" [ngStyle]="{ 'color': columna.color }"></i>{{ columna.titulo }}</h2>
+      <p>{{ columna.contenido }}</p>
+    </div>
+    <div class="curved">
+      <div class="button-section">
+        <button class="button-center" routerLink="/contacto">CONTACTANOS</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="figure-text">
+<h2 class="info-home-subtitle">Equipo Especializado</h2>
+<figure class="figure">
+  <img src="../../../assets/img/Image5.png" alt="Descripción de la imagen" class="figure-img">
+</figure>
+<div class="text-content">
+  <p>Nuestro equipo de desarrollo web especializado está dedicado a ofrecerte soluciones únicas y personalizadas para tu página web informativa. Nos comprometemos a comprender tus necesidades y objetivos específicos para crear una plataforma digital que refleje la identidad de tu marca y brinde una experiencia excepcional a tus usuarios. </p>
+  <p>Utilizamos las últimas tecnologías y prácticas de desarrollo para garantizar que tu sitio web sea ágil, intuitivo y visualmente atractivo en todas las plataformas y dispositivos. Ya sea que necesites una página web corporativa, un blog informativo o un portal de noticias, estamos aquí para convertir tus ideas en realidad y ayudarte a destacarte en el mundo digital.</p>
+</div>
+</section>
+
+<section class="testimonios-container">
+  <div class="curved-reversed">
+  <h2 class="info-subtitle">Testimonios</h2>
+</div>
+<div class="testimonios-slider-container" #container>
+  <div class="testimonio-card" *ngFor="let testimonio of testimonios">
+    <img class="foto" [src]="testimonio.foto" alt="Foto de {{ testimonio.nombre }}">
+    <h3>{{ testimonio.nombre }}</h3>
+    <p>{{ testimonio.mensaje }}</p>
+  </div>
+  <div class="testimonio-card" *ngFor="let testimonio of testimonios">
+    <img class="foto" [src]="testimonio.foto" alt="Foto de {{ testimonio.nombre }}">
+    <h3>{{ testimonio.nombre }}</h3>
+    <p>{{ testimonio.mensaje }}</p>
+  </div>
+</div>
+</section>
+
+<section class="container-marketing">
+<h2 class="title-marketing">Estrategias de desarrollo web</h2>
+<p class="info-marketing">Únase a más de 40.000 especialistas en desarrollo web y obtenga estrategias comprobadas de desarrollo web por correo electrónico</p>
+<div class="item" *ngFor="let articulo of articulos">
+  <figure>
+    <img [src]="articulo.imagen" alt="Imagen subida por {{ articulo.autor }}">
+    <p>{{ articulo.autor }} | {{ articulo.fecha }} </p>
+    <figcaption>{{ articulo.titulo }}</figcaption>
+  </figure>
+</div>
+</section>
